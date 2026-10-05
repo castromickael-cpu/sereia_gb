@@ -1,0 +1,332 @@
+.one {
+    width: 100%;
+    height: 4px;
+    background: #ebf088;
+}
+
+.header {
+    width: 100%;
+    background: #d90404;
+    padding: 100px 0;
+
+}
+.header .container {
+    max-width: 1200px; /* Ou a largura máxima da sua grelha/site */
+    margin: 0 auto;    /* Centraliza o container na página */
+    padding: 0px 0px;   /* Evita que toque nas bordas em ecrãs pequenos */
+}
+
+.topo {
+    text-align: right;
+}
+
+.topo ul li {
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.topo ul li a {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    line-height: 15px;
+}
+
+.topo ul li a:hover {
+    color: #f2e41b;
+}
+
+
+/*banner*/
+
+.banner {
+    width: 100%;
+    height: 600px;
+    background: url(img/banner.jfif) no-repeat center;
+    background-size: cover;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center;
+    
+}
+
+.banner h1{
+    font-family: Oswald;
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-shadow: black 2px 2px 10px;
+    margin-bottom: 50px;
+    text-align: center;
+ }
+
+.banner a{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 25px 20px;
+    width: 50px;
+    color: white;
+    background: red;
+    border-radius: 10px;
+    box-shadow: black 2px 2px 10px;
+    font-size: 25px;
+}
+
+.banner a:hover {
+    background: yellow;
+    color: black;
+    transition: all 0.3s;
+    box-shadow: black 2px 2px 10px;
+}
+
+/*combos, petiscos principais */
+
+.petiscos h2 {
+    margin-top: 75px;
+    font-family: Oswald;
+    font-size: 45px;
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+}
+
+.petiscos p{
+    font-family: Lato;
+    font-size: 24px;
+    color: #0d0d0d;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.combo {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between; /* Distribui os itens lado a lado */
+    list-style: none;               /* Remove os pontos pretos da lista */
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Adiciona um espaço de 20px entre cada combo */
+}
+
+.combo li {
+    flex: 1;
+    font-family: Lato;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(187, 21, 21);
+    font-size: 20px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    overflow: hidden;              /* Impede que a imagem vaz do card ao dar zoom */
+    border: 5px solid #d9d3d3;
+    background-color: #f4f4f4;
+}
+
+.combo img {
+    width: 100%;
+    height: 320px;            /* Aumenta a altura vertical para esticar o card */
+    object-fit: cover;        /* Preenche todo o espaço do card */
+    object-position: center;   /* Centraliza o foco da imagem */
+    display: block;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+
+.combo img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.combo h3{
+    background: #d62a1e;
+    color: white;
+    font-weight: bold;
+    text-align: center;  /* Centraliza o texto dentro da faixa */
+    padding: 10px 0;     /* Adiciona um espaço interno em cima e em baixo */
+    margin-bottom: 15px; /* Separa a faixa vermelha da imagem abaixo */
+    border-radius: 4px;  /* Opcional: arredonda levemente os cantos da faixa */
+
+}
+
+.combo p{
+    font-family: Lato;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: black;
+    text-transform: initial;
+    text-align: center;
+}
+.combo h4 a {
+    background-color: green;
+    padding: 10px;
+    color: white;
+    font-family: Oswald;
+    line-height: 65px;
+    font-size: 30px;
+}
+
+.combo h4 a:hover {
+    background-color: red;
+    color: white;
+    transition: 0.8 all;
+}
+/*fim combos, petiscos principais */
+
+/*slides*/
+.slide {
+    margin-top: 20px;
+}
+
+.slide h3{
+    margin-top: 75px;
+    font-family: Oswald;
+    font-size: 40px;
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+}
+
+.slide p{
+    font-family: Lato;
+    font-size: 24px;
+    color: #f2e41b;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.itens {
+    display: flex;
+    overflow-x: auto;
+    max-width: 50%; /* Reduza ou aumente este valor conforme o tamanho desejado para a faixa */
+    margin: 0 auto;   /* Centraliza o slide na página */
+    gap: 15px;        /* Substitui o margin-left individual por um espaçamento uniforme entre as imagens */
+}
+
+.itens img{
+width: 10%;
+height: 80%;
+margin-left: 20px;
+
+}
+/*fim slides*/
+
+/*localização*/
+
+
+.localizacao h2{
+    margin-top: 75px;
+    font-family: Oswald;
+    font-size: 45px;
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+}
+
+.localizacao p{
+    font-family: Lato;
+    font-size: 24px;
+    color: #080807;
+    text-transform: uppercase;
+}
+
+
+.sereialoc{
+margin-top: 50px;
+width: 100%;
+height: 500px;
+text-align: center;
+margin-bottom: 50px;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar
+::-webkit-scrollbar-thumb
+
+::-webkit-scrollbar-track {
+    background: red;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    background: #d90404;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f2e41b;
+}
+
+
+/* celular */
+
+@media only screen and (max-width: 768px) {
+
+    /* 1. Ajuste do Cabeçalho e Altura */
+    .header {
+        height: auto;           /* Permite que o cabeçalho se ajuste ao conteúdo */
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .header img {
+        margin: 0 auto 15px auto; /* Centraliza o logo e remove margens fixas */
+        display: block;
+    }
+
+    /* 2. Menu de Navegação */
+    .topo ul {
+        display: flex;
+        flex-direction: column; /* Coloca os links do menu em lista vertical */
+        align-items: center;
+        padding: 0;
+    }
+
+    .topo ul li a {
+        width: 90%;             /* Ocupa a maior parte da largura */
+        margin: 5px 0;
+        float: none;            /* Remove o float para não quebrar o layout */
+    }
+
+    /* 3. Adaptação dos Combos / Cards */
+    .combo {
+        display: flex;
+        flex-direction: column; /* Coloca os combos um debaixo do outro */
+        align-items: center;
+        padding: 10px;
+    }
+
+    .combo li {
+        width: 100%;            /* Cada card ocupa toda a largura disponível */
+        margin-bottom: 20px;
+    }
+
+    /* 4. Textos e Títulos */
+    .banner h1 {
+        font-size: 28px;        /* Reduz o tamanho do título para não cortar nas telas pequenas */
+        padding: 0 10px;
+    }
+
+    .slide h3, .localizacao h2 {
+        font-size: 26px;        /* Ajusta o tamanho dos títulos das secções */
+    }
+
+    /* 5. Mapa de Localização */
+    .sereialoc {
+        width: 100%;
+        height: 300px;          /* Altura ideal para visualização em telemóveis */
+    }
+}
+
+
